@@ -4,5 +4,5 @@ const navIcon = document.querySelector('.fa-bars');
 navbar.addEventListener('click', (e)=>{
     listElem.classList.toggle('show');
     navIcon.classList.toggle('fa-times');
-    
+    navIcon.classList.toggle('change-color');
 })

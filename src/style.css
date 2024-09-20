@@ -79,12 +79,19 @@ nav ul{
     nav .nav-mobile {
       display: flex;
       align-items: center;
-      margin-right: 15px;
+      margin-right: 40px;
       cursor: pointer;
+      z-index: 99999999;
+
+      
 
       * {
         cursor:pointer;
       }
+    }
+
+    .change-color {
+      color: white;
     }
 
 
@@ -94,20 +101,22 @@ nav ul{
 
     .show {
       display: flex;
+      position: fixed;
+      left: 20vw;
     }
 
     nav ul{
       box-sizing: border-box;
       flex-direction: column;
       z-index: 99999;
-      width: 100vw;
-      justify-content:flex-start;
+      width: 80vw;
+      justify-content: center;
       height: 100vh;
       background: var(--primary-blue);
       padding-top: 20px;
 
       li {
-        padding: 10px 0;
+        padding: 20px 0;
         width: 100%;
         text-align: center;
       }
