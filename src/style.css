@@ -125,8 +125,22 @@ footer {
 }
 /* FOOTER END */
 @media (max-width:800px) {
+  footer p,a {
+    font-size: 10px;
+  }
+
+  .footer-divide {
+    justify-content: space-between;
+    margin:0;
+  }
+
   footer .footer-divide img {
     display: none;
+  }
+
+  .footer-divide .footer-contact{
+    font-size: 10px;
+    width: 40vw;
   }
 }
 /* MOBILE PHONE */
@@ -141,8 +155,6 @@ footer {
       cursor: pointer;
       z-index: 99999999;
       -webkit-tap-highlight-color: transparent;
-
-      
 
       * {
         cursor:pointer;
