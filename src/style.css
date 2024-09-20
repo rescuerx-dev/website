@@ -92,6 +92,7 @@ nav ul{
 
     .change-color {
       color: white;
+      font-size: 20px;
     }
 
 
@@ -113,7 +114,6 @@ nav ul{
       justify-content: center;
       height: 100vh;
       background: var(--primary-blue);
-      padding-top: 20px;
 
       li {
         padding: 20px 0;
