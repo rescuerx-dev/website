@@ -6,7 +6,7 @@ export default defineConfig({
       input: {
         main: './index.html',
         about: './about.html',
-        services: '/services.html',
+        services: './services.html',
         contact: './contact.html'
       }
     }
