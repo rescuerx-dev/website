@@ -97,8 +97,10 @@ nav ul{
     }
 
     nav ul{
+      box-sizing: border-box;
       flex-direction: column;
-      width: 230px;
+      z-index: 99999;
+      width: 100vw;
       justify-content:flex-start;
       height: 100vh;
       background: var(--primary-blue);
