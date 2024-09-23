@@ -53,11 +53,14 @@ section {
 }
 
 @media (max-width:510px) {
+    .main-content {
+        flex-direction: column;
+    }
     .main-content main {
         width: 70vw;
         text-align: center;
     }
-    .main-img {
+    /* .main-img {
         display:none;
-    }
+    } */
 }
