@@ -298,6 +298,32 @@ section {
             align-items: center;
             row-gap: 40px;
         }
+
+        .service h4{
+            font-size: 16px;
+        }
+
+        .service-2 h4{
+            font-size: 16px;
+        }
+
+        .plans .service-block{
+            align-items: center;
+        }
+
+        .plans .service-block p{
+            font-size: 12px;
+            padding: 10px 20px;
+            text-align: center;
+            
+        }
+
+        .plans .service-block button a{
+            font-size: 16px;
+        }
+
+        
+
     
     }
 
