@@ -176,6 +176,29 @@ section {
         }
     }
 
+    .services-content {
+        .why-us h2{
+            font-size: 28px;
+        }
+
+        .why-us .why-section .why-block{
+            width: 300px;
+
+            img {
+                max-width: 50px;
+            }
+
+            span {
+                font-size: 12px;
+            }
+        }
+
+
+
+        
+    
+    }
+
     
 }
 
