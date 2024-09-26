@@ -86,7 +86,7 @@ section {
     align-items: center;
     .why-us {
         background: white;
-        width: 90%;
+        width: 80%;
         border-radius: 5px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: relative;
@@ -104,6 +104,7 @@ section {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+        margin: 0 10px;
         margin-bottom: 15px;
     }
 
