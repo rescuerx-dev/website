@@ -38,6 +38,7 @@ section {
     background: var(--primary-blue);
     width: 100vw;
     padding: 40px 0px;
+    padding-top: 60px;
     padding-bottom: 80px;
     margin-bottom:0px;
     .image-stack {
@@ -131,6 +132,105 @@ section {
         max-width: 80px;
         height: auto;
     }
+
+    .service-heading {
+        /* align-self: flex-start; */
+        margin-bottom: 10px; 
+        font-size: 42px;
+        color: var(--primary-blue);
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: var(--primary-blue);
+        letter-spacing: 1px;
+    }
+
+    .service-block-section {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        column-gap: 50px;
+        margin-bottom: 50px;
+    }
+
+    .service-block {
+        width: 270px;
+        text-align: center;
+        padding-bottom: 10px;
+        border-radius: 5px; 
+    }
+
+    .service-block img{
+        object-fit: cover;
+        width: inherit;
+        height: 190px;
+        border-top-right-radius: 5px;
+        border-top-left-radius: 5px;
+    }
+
+    .service {
+        background: var(--primary-blue);
+        width: 290px;
+    }
+
+    .service:hover,.service-2:hover {
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    }
+
+    .service h4{
+        color: var(--text-white);
+        width: 290px;
+    }
+
+    .service-2{
+        background: var(--text-white)
+    }
+
+    .service-2 h4{
+        color: var(--primary-blue);
+    }
+
+    .plans .service-block{
+        background: var(--text-white);
+        padding: 10px;
+        border-radius: 0px;
+        border-bottom: 5px solid var(--primary-blue);
+    }
+
+    .plans .service-block h3{
+        color: var(--primary-blue);
+        font-size: 20px;
+    }
+
+    .plans .service-block p{
+        color: var(--text-black);
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .plans .service-block button{
+        margin-bottom: 10px;
+    }
+
+    .plans .service-block:hover{
+        background: var(--primary-blue);
+    }
+
+    .plans .service-block:hover h3{
+        color: var(--text-white);
+    }
+
+    .plans .service-block:hover p{
+        color: var(--text-white);
+    }
+
+    .plans .service-block:hover button{
+        background: var(--text-white);
+    }
+
+    .plans .service-block:hover button a{
+        color: var(--primary-blue);
+    }
+    
 }
 
 @media (max-width:800px) {
@@ -193,9 +293,11 @@ section {
             }
         }
 
-
-
-        
+        .service-block-section {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 40px;
+        }
     
     }
 
