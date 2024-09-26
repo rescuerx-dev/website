@@ -79,7 +79,7 @@ section {
 }
 
 .services-content {
-    background: var(--light-blue);
+    background: var(--lighter-blue);
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -233,6 +233,38 @@ section {
     
 }
 
+.contact-content {
+    text-align: center;
+    h3{
+        font-size: 24px;
+    }
+    .email-info {
+        font-size: 20px;
+        font-weight: 600;
+        margin: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    a {
+        font-weight: 500;
+        color: var(--text-grey);
+    }
+
+    .email-info a {
+        color: var(--primary-blue);
+        font-weight: 600;
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+
+    .email-info img{
+        width: 20px;
+    }
+}
+
 @media (max-width:800px) {
     section {
         padding: 10px;
@@ -321,10 +353,11 @@ section {
         .plans .service-block button a{
             font-size: 16px;
         }
-
-        
-
     
+    }
+
+    .contact-content a{
+        font-size: 16px;
     }
 
     
