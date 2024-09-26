@@ -77,6 +77,16 @@ nav ul{
 }
 /* NAVBAR END */
 
+.page-heading {
+  font-size: 36px;
+  color: var(--primary-blue);
+  margin: 40px 0;
+}
+
+.page-section {
+  margin: 40px;
+}
+
 button {
   background: var(--primary-blue);
   border: none;
@@ -137,6 +147,10 @@ footer {
 }
 /* FOOTER END */
 @media (max-width:800px) {
+
+  .page-heading {
+    text-align: center;
+  }
   footer p,a {
     font-size: 10px;
   }
