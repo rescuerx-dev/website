@@ -224,3 +224,10 @@ footer {
     }
 
 }
+
+@media (min-width:1500px) {
+  nav {
+    display: flex;
+    justify-content: center;
+  }
+}

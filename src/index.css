@@ -1,3 +1,5 @@
+
+
 section {
     padding: 20px;
     margin-bottom: 50px;
@@ -30,8 +32,62 @@ section {
     }
 }
 
+.about-content {
+    display: flex;
+    justify-content: center;
+    background: var(--primary-blue);
+    width: 100vw;
+    padding: 40px 0px;
+    padding-bottom: 80px;
+
+    .image-stack {
+        display: grid;
+        position: relative;
+        grid-template-columns: repeat(12, 1fr);
+        max-width: 500px;
+        box-sizing: border-box;
+      }
+      
+      .image-stack__item--bottom {
+        grid-column: 4 / -1;
+        grid-row: 1;
+        padding-top: 25%;
+      }
+      
+      .image-stack__item--top {
+        grid-row: 1;
+        grid-column: 1 / span 2;
+        z-index: 1; 
+      }
+
+    img {
+        max-width: 500px;
+        height: fit-content;
+        border-radius: 3px;
+    }
+
+    .about-description {
+        width: 45%;
+        max-width: 900px;
+        
+        p {
+            margin-bottom: 10px;
+            color: var(--text-white);
+        }
+    }
+}
+
 @media (max-width:800px) {
+    section {
+        padding: 10px;
+    }
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
     .main-content main{
+        width: 70vw;
+        text-align: center;
         h1{
             font-size: 42px;
             line-height: 52px;
@@ -45,27 +101,48 @@ section {
             font-size: 16px;
         }
 
-        img {
-            width: 40%;
+        .main-content main img.main-img {
+            width: 70%;
+            margin-top: 20px;
         }
         
     }
+
+    .about-content {
+        flex-direction: column;
+        align-items: center;
+
+        .about-description {
+            width: 80%;
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+
+    
 }
 
 @media (max-width:510px) {
 
-    .main-content {
-        flex-direction: column;
-
-    }
     .main-content main {
         width: 70vw;
         text-align: center;
-        position: relative;
-        left: 40px;
+        /* position: relative;
+        left: 40px; */
     }
     .main-content img.main-img {
         max-width: 100%;
         margin-top: 10px;
+    }
+
+    .about-content {
+        /* width: calc(100vw + 40px); */
+        .image-stack {
+            max-width: 280px;
+        }
+        img {
+            max-width: 200px;
+        }
     }
 }
