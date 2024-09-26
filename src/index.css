@@ -85,12 +85,13 @@ section {
     align-items: center;
     .why-us {
         background: white;
-        width: 90%;
+        width: 90vw;
         border-radius: 5px;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
         position: relative;
         bottom: 80px;
         padding-top: 15px;
+        margin-right: 20px;
     }
 
     .why-us h2 {
