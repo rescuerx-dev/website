@@ -25,11 +25,13 @@ export async function handler(event) {
     try {
       // Send email
       await transporter.sendMail(mailOptions);
+      console.log("email sent");
       return {
         statusCode: 200,
         body: JSON.stringify({ message: 'Email sent successfully' }),
       };
     } catch (error) {
+      console.log("email not sent", error);
       return {
         statusCode: 500,
         body: JSON.stringify({ message: 'Failed to send email' }),
