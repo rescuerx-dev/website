@@ -98,7 +98,7 @@
 }
 .services-info .info-block {
     display: flex;
-    column-gap: 40px;
+    gap: 40px;
     max-width: 1000px;
     margin-bottom: 50px;
     img {
@@ -115,3 +115,41 @@
 h2 {
     margin: 20px 0;
 }
+
+@media (max-width:800px) {
+    .services-info .info-block {
+        img {
+            height: fit-content;
+        }
+        .info-desciption {
+            font-size: 14px;
+        }
+    }
+
+    .service-block-section {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 40px;
+
+        button a {
+            font-size: 18px;
+        }
+    }
+}
+
+@media (max-width:510px) {
+    .services-info .info-block {
+        flex-direction: column;
+        
+
+        img,.info-desciption {
+            width: 100%;
+            p {
+                font-size: 14px;
+            }
+        }
+
+
+    }
+}
+
