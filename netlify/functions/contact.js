@@ -1,13 +1,12 @@
-const nodemailer = require('nodemailer');
+import { createTransport } from 'nodemailer';
 
-
-export const handler = async (event) => {
+export async function handler(event) {
   if (event.httpMethod === 'POST') {
     console.log(event.body);
     const { name, email, phone, message } = JSON.parse(event.body);
 
     // Configure the SMTP transporter
-    const transporter = nodemailer.createTransport({
+    const transporter = createTransport({
       service: 'Gmail',
       auth: {
         user: process.env.EMAIL_USER, // Your Gmail address
@@ -30,7 +29,6 @@ export const handler = async (event) => {
         statusCode: 200,
         body: JSON.stringify({ message: 'Email sent successfully' }),
       };
-      console.log('email sent');
     } catch (error) {
       return {
         statusCode: 500,
@@ -43,5 +41,5 @@ export const handler = async (event) => {
       body: JSON.stringify({ message: 'Method Not Allowed' }),
     };
   }
-};
+}
 
