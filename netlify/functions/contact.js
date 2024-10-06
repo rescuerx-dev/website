@@ -1,6 +1,7 @@
 const nodemailer = require('nodemailer');
 
-exports.handler = async (event) => {
+
+export const handler = async (event) => {
   if (event.httpMethod === 'POST') {
     console.log(event.body);
     const { name, email, phone, message } = JSON.parse(event.body);
