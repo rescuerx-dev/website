@@ -1,0 +1,113 @@
+.service-block-section {
+    display: flex;
+    justify-content: center;
+    column-gap: 50px;
+    margin-bottom: 50px;
+}
+
+.service-block {
+    width: 270px;
+    text-align: center;
+    padding-bottom: 10px;
+    border-radius: 5px; 
+}
+
+.service-block img{
+    object-fit: cover;
+    width: inherit;
+    height: 190px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.service {
+    background: var(--primary-blue);
+    width: 290px;
+}
+
+.service:hover,.service-2:hover {
+    box-shadow: 0 1px 10px rgba(0,0,0,0.3);
+}
+
+.service h4{
+    color: var(--text-white);
+    width: 290px;
+}
+
+.service-2{
+    background: var(--text-white)
+}
+
+.service-2 h4{
+    color: var(--primary-blue);
+}
+
+.plans .service-block{
+    background: var(--text-white);
+    padding: 10px;
+    border-radius: 0px;
+    /* border: 1px solid var(--primary-blue); */
+    border-bottom: 5px solid var(--primary-blue);
+}
+
+.plans .service-block h3{
+    color: var(--primary-blue);
+    font-size: 20px;
+}
+
+.plans .service-block p{
+    color: var(--text-black);
+    font-size: 14px;
+    padding: 10px;
+}
+
+.plans .service-block button{
+    margin-bottom: 10px;
+}
+
+.plans .service-block:hover{
+    background: var(--primary-blue);
+}
+
+.plans .service-block:hover h3{
+    color: var(--text-white);
+}
+
+.plans .service-block:hover p{
+    color: var(--text-white);
+}
+
+.plans .service-block:hover button{
+    background: var(--text-white);
+}
+
+.plans .service-block:hover button a{
+    color: var(--primary-blue);
+}
+
+.services-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap:50px;
+    margin-bottom: 100px;
+}
+.services-info .info-block {
+    display: flex;
+    column-gap: 40px;
+    max-width: 1000px;
+
+    img {
+        border-radius: 5px;
+        width: 40%;
+    }
+}
+
+.services-info .info-block .info-desciption {
+    width: 60%;
+    text-align: justify;
+}
+
+h2 {
+    margin: 20px 0;
+}

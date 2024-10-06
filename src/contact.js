@@ -1,1 +1,1 @@
-console.log('contact');
+console.log('Welcome to Rescuerx');
