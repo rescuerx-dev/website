@@ -9,8 +9,8 @@ export async function handler(event) {
     const transporter = createTransport({
       service: 'Gmail',
       auth: {
-        user: process.env.EMAIL_USER, // Your Gmail address
-        pass: process.env.EMAIL_PASS, // Your Gmail password or an app password
+        user: 'contact@rescuerx.in', // Your Gmail address
+        pass: 'bpbutsiuoynuixkr', // Your Gmail password or an app password
       },
     });
 
