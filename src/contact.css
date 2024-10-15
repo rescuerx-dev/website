@@ -55,6 +55,14 @@ form p {
     visibility: visible;
 }
 
+.submitting {
+    background: #1548a6;
+}
+
+.submitted {
+    background: #2ecc71;
+}
+
 @media (max-width:800px) {
     form {
         width: 80%;
