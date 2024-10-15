@@ -63,6 +63,10 @@ form p {
     background: #2ecc71;
 }
 
+.submitted:hover {
+    background: #2ecc71;
+}
+
 @media (max-width:800px) {
     form {
         width: 80%;

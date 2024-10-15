@@ -20,6 +20,7 @@ document.getElementById('contact-form').addEventListener('submit', async (event)
     
     if (response.ok) {
       submitBtn.classList.remove('submitting');
+      submitBtn.disabled = true;
       submitBtn.textContent = 'Submitted ✔';
       submitBtn.classList.add('submitted');
       form.reset(); // Optionally reset the form
