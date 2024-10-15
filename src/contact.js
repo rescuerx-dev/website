@@ -1,3 +1,5 @@
+const submitBtn = document.getElementById('submit');
+const errorMsg = document.querySelector('.error-msg');
 document.getElementById('contact-form').addEventListener('submit', async (event) => {
     event.preventDefault(); // Prevent default form submission
     
@@ -14,17 +16,14 @@ document.getElementById('contact-form').addEventListener('submit', async (event)
     body: JSON.stringify(data),
     });
 
-    console.log(response);
     
     if (response.ok) {
-      alert('Your message has been sent!');
+      submitBtn.textContent = 'Submitted!';
+
       form.reset(); // Optionally reset the form
-    } else {
-      alert('Failed to send your message.');
-    }
+    } 
     
     } catch (error) {
-    console.error('Error:', error);
-    alert('An error occurred.');
+      errorMsg.classList.toggle('show');
     }
     });

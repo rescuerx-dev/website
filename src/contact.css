@@ -1,0 +1,71 @@
+form {
+    background: var(--light-blue);
+    padding: 40px 30px;
+    max-width: 750px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+form input, textarea{
+    height: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 5px;
+    font-family: "Poppins", sans-serif;
+    margin: 15px 10px;
+    outline-color: var(--primary-blue);
+    border: none;
+}
+
+form textarea {
+    min-height: 100px;
+    padding: 5px;
+    resize: none;
+}
+form input[type='text'], textarea {
+    width: 80%;
+}
+
+form input[type="email"], input[type="tel"] {
+    width: 260px;
+}
+
+form button {
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Poppins", sans-serif;
+    width: 300px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #1548a6;
+}
+
+form p {
+    font-size: 10px;
+    margin-top: 5px;
+    color: red;
+    visibility: hidden;
+}
+
+.show {
+    visibility: visible;
+}
+
+@media (max-width:800px) {
+    form {
+        width: 80%;
+    }
+
+    form input[type="email"], input[type="tel"] {
+        width: 80%;
+    }
+
+    form button {
+        width: 80%;
+    }
+
+}
