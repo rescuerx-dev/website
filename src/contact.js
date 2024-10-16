@@ -9,7 +9,7 @@ document.getElementById('contact-form').addEventListener('submit', async (event)
     const data = Object.fromEntries(formData);
     
     try {
-    const response = await fetch('https://rescuerx.netlify.app/.netlify/functions/contact', {
+    const response = await fetch('https://rescuerx.in/.netlify/functions/contact', {
     method: 'POST',
     headers: {
     'Content-Type': 'application/json',
