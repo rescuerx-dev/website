@@ -13,6 +13,7 @@
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <nav>
@@ -31,33 +32,50 @@
               <li><a href="/contact.html">Contact</a></li>
           </ul>
       </nav>
-      <section class="page-section">
+      <section class="page-section" data-aos="fade-up">
         <h1 class="page-heading">Services</h1>
 
-        <section class="services-info">
-          <h3>Ambulatory services</h3>
-            <div class="info-block">
+        <section class="services-info" data-aos="fade-up">
+          <h3 data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine">Ambulatory services</h3>
+            <div class="info-block" data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine">
               <img src="/images/about-ambulance.jpeg" alt="">
               <div class="info-desciption">
                 <p>Donec posuere eget ex sit amet aliquam. Donec mattis aliquam pellentesque. Phasellus arcu ex, aliquam et diam a, viverra ultrices dolor. Morbi ut pretium libero, eget pulvinar orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus viverra eros non orci aliquet cursus. Nunc egestas sapien id volutpat suscipit. Pellentesque volutpat maximus nulla, sit amet fermentum sem efficitur id. </p>
               </div>
             </div>
-            <h3>E-Pharmacy</h3>
-            <div class="info-block">
+            <h3 data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine">E-Pharmacy</h3>
+            <div class="info-block" data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine">
               <div class="info-desciption">
                 <p>Donec posuere eget ex sit amet aliquam. Donec mattis aliquam pellentesque. Phasellus arcu ex, aliquam et diam a, viverra ultrices dolor. Morbi ut pretium libero, eget pulvinar orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus viverra eros non orci aliquet cursus. Nunc egestas sapien id volutpat suscipit. Pellentesque volutpat maximus nulla, sit amet fermentum sem efficitur id. </p>
               </div>
               <img src="/images/pharmacy.jpeg" alt="">
             </div>
-            <h3>Lab tests</h3>
-            <div class="info-block">
+            <h3 data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine">Lab tests</h3>
+            <div class="info-block" data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine">
               <img src="/images/lab.jpeg" alt="">
               <div class="info-desciption">
                 <p>Donec posuere eget ex sit amet aliquam. Donec mattis aliquam pellentesque. Phasellus arcu ex, aliquam et diam a, viverra ultrices dolor. Morbi ut pretium libero, eget pulvinar orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus viverra eros non orci aliquet cursus. Nunc egestas sapien id volutpat suscipit. Pellentesque volutpat maximus nulla, sit amet fermentum sem efficitur id. </p>
               </div>
             </div>
-            <h3>Consultation services</h3>
-            <div class="info-block">
+            <h3 data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-easing="ease-in-sine">Consultation services</h3>
+            <div class="info-block"
+            data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-easing="ease-in-sine">
               <div class="info-desciption">
                 <p>Donec posuere eget ex sit amet aliquam. Donec mattis aliquam pellentesque. Phasellus arcu ex, aliquam et diam a, viverra ultrices dolor. Morbi ut pretium libero, eget pulvinar orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus viverra eros non orci aliquet cursus. Nunc egestas sapien id volutpat suscipit. Pellentesque volutpat maximus nulla, sit amet fermentum sem efficitur id. </p>
               </div>
@@ -65,7 +83,7 @@
             </div>
         </section>
         <h2>Plans</h2>
-        <section class="service-block-section plans" id="service-plans">
+        <section class="service-block-section plans" data-aos="fade-up" id="service-plans">
           <div class="service-block">
             <h3>Corporate</h3>
             <p>Nunc efficitur nisl vel leo molestie vehicula. Nullam egestas nisl vel dolor tincidunt posuere. Etiam vitae purus volutpat, condimentum nunc in, commodo justo. Vestibulum non libero ante. Curabitur placerat metus in erat mollis, nec rhoncus velit suscipit. Donec finibus malesuada risus, sed consectetur quam aliquet ac. In et lorem non arcu finibus porta. Duis finibus tellus neque, sed lobortis est accumsan ac. Nullam vel eros tincidunt, dignissim nisi sit amet, dignissim dui. Vestibulum efficitur, neque a varius mattis, arcu erat vulputate est, eleifend consectetur tellus dolor id tellus. Curabitur rutrum congue sagittis. </p>
@@ -115,5 +133,9 @@
   </footer>
    <script type="module" src="/src/services.js"></script>
    <script type="module" src="src/main.js"></script>
+   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+   <script>
+    AOS.init();
+  </script>
 </body>
 </html>
