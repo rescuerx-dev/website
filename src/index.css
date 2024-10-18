@@ -23,6 +23,8 @@ section {
     }
 
     main button {
+        width: 200px;
+        text-align: center;
         margin-top: 15px;
         padding: 12px 32px;
     }
