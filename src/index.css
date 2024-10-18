@@ -24,7 +24,6 @@ section {
 
     main button {
         width: 200px;
-        text-align: center;
         margin-top: 15px;
         padding: 12px 32px;
     }
@@ -179,8 +178,9 @@ section {
         box-shadow: 0 1px 10px rgba(0,0,0,0.3);
     }
 
-    .service h4{
+    .service h3{
         color: var(--text-white);
+        font-size: 16px;
         width: 290px;
     }
 
@@ -188,8 +188,9 @@ section {
         background: var(--text-white)
     }
 
-    .service-2 h4{
+    .service-2 h3{
         color: var(--primary-blue);
+        font-size: 16px;
     }
 
     .plans .service-block{
