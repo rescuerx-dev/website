@@ -1,141 +1,242 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RescueRx</title>
-    <link rel="icon" type="image" href="/rescuelogo.png" />
-    <link rel="stylesheet" type="text/css" href="/src/style.css"/>
-    <link rel="stylesheet" type="text/css" href="/src/services.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href=
-"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="/src/style.css" />
+    <link rel="stylesheet" type="text/css" href="/src/services.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-</head>
-<body>
+  </head>
+  <body>
     <nav>
-        <a class="logo" href="/">
-          <img src="/images/rescuelogo.png" alt="RescueRx logo" class="logo-img">
-          <span class="logo-text">RescueRx</span>
-        </a>
-        <div class="nav-mobile">
-          <label class="checkbtn">
-              <i class="fas fa-bars"></i>
-          </label>
-        </div>
-          <ul class="nav-list">
-              <li><a href="/about.html">About</a></li>
-              <li><a class="active">Services</a></li>
-              <li><a href="/contact.html">Contact</a></li>
-          </ul>
-      </nav>
-      <section class="page-section" data-aos="fade-up">
-        <h1 class="page-heading">Services</h1>
-
-        <section class="services-info" data-aos="fade-up">
-          <h3 data-aos="fade-right"
-          data-aos-offset="200"
-          data-aos-easing="ease-in-sine">Ambulatory services</h3>
-            <div class="info-block" data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine">
-              <img src="/images/about-ambulance.jpeg" alt="">
-              <div class="info-desciption">
-                <p>Donec posuere eget ex sit amet aliquam. Donec mattis aliquam pellentesque. Phasellus arcu ex, aliquam et diam a, viverra ultrices dolor. Morbi ut pretium libero, eget pulvinar orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus viverra eros non orci aliquet cursus. Nunc egestas sapien id volutpat suscipit. Pellentesque volutpat maximus nulla, sit amet fermentum sem efficitur id. </p>
-              </div>
-            </div>
-            <h3 data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine">E-Pharmacy</h3>
-            <div class="info-block" data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine">
-              <div class="info-desciption">
-                <p>Donec posuere eget ex sit amet aliquam. Donec mattis aliquam pellentesque. Phasellus arcu ex, aliquam et diam a, viverra ultrices dolor. Morbi ut pretium libero, eget pulvinar orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus viverra eros non orci aliquet cursus. Nunc egestas sapien id volutpat suscipit. Pellentesque volutpat maximus nulla, sit amet fermentum sem efficitur id. </p>
-              </div>
-              <img src="/images/pharmacy.jpeg" alt="">
-            </div>
-            <h3 data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine">Lab tests</h3>
-            <div class="info-block" data-aos="fade-right"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine">
-              <img src="/images/lab.jpeg" alt="">
-              <div class="info-desciption">
-                <p>Donec posuere eget ex sit amet aliquam. Donec mattis aliquam pellentesque. Phasellus arcu ex, aliquam et diam a, viverra ultrices dolor. Morbi ut pretium libero, eget pulvinar orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus viverra eros non orci aliquet cursus. Nunc egestas sapien id volutpat suscipit. Pellentesque volutpat maximus nulla, sit amet fermentum sem efficitur id. </p>
-              </div>
-            </div>
-            <h3 data-aos="fade-left"
-            data-aos-offset="200"
-            data-aos-easing="ease-in-sine">Consultation services</h3>
-            <div class="info-block"
-            data-aos="fade-left"
-        data-aos-offset="200"
-        data-aos-easing="ease-in-sine">
-              <div class="info-desciption">
-                <p>Donec posuere eget ex sit amet aliquam. Donec mattis aliquam pellentesque. Phasellus arcu ex, aliquam et diam a, viverra ultrices dolor. Morbi ut pretium libero, eget pulvinar orci. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus viverra eros non orci aliquet cursus. Nunc egestas sapien id volutpat suscipit. Pellentesque volutpat maximus nulla, sit amet fermentum sem efficitur id. </p>
-              </div>
-              <img src="/images/consultation.jpeg" alt="">
-            </div>
-        </section>
-        <h2>Plans</h2>
-        <section class="service-block-section plans" data-aos="fade-up" id="service-plans">
-          <div class="service-block">
-            <h3>Corporate</h3>
-            <p>Nunc efficitur nisl vel leo molestie vehicula. Nullam egestas nisl vel dolor tincidunt posuere. Etiam vitae purus volutpat, condimentum nunc in, commodo justo. Vestibulum non libero ante. Curabitur placerat metus in erat mollis, nec rhoncus velit suscipit. Donec finibus malesuada risus, sed consectetur quam aliquet ac. In et lorem non arcu finibus porta. Duis finibus tellus neque, sed lobortis est accumsan ac. Nullam vel eros tincidunt, dignissim nisi sit amet, dignissim dui. Vestibulum efficitur, neque a varius mattis, arcu erat vulputate est, eleifend consectetur tellus dolor id tellus. Curabitur rutrum congue sagittis. </p>
-            <button><a href="/contact.html">Get quote</a></button>
-          </div>
-          <div class="service-block">
-            <h3>Residential zones</h3>
-            <p>Nunc efficitur nisl vel leo molestie vehicula. Nullam egestas nisl vel dolor tincidunt posuere. Etiam vitae purus volutpat, condimentum nunc in, commodo justo. Vestibulum non libero ante. Curabitur placerat metus in erat mollis, nec rhoncus velit suscipit. Donec finibus malesuada risus, sed consectetur quam aliquet ac. In et lorem non arcu finibus porta. Duis finibus tellus neque, sed lobortis est accumsan ac. Nullam vel eros tincidunt, dignissim nisi sit amet, dignissim dui. Vestibulum efficitur, neque a varius mattis, arcu erat vulputate est, eleifend consectetur tellus dolor id tellus. Curabitur rutrum congue sagittis. </p>
-            <button><a href="/contact.html">Get quote</a></button>
-          </div>
-          <div class="service-block">
-            <h3>Industrial zones</h3>
-            <p>Nunc efficitur nisl vel leo molestie vehicula. Nullam egestas nisl vel dolor tincidunt posuere. Etiam vitae purus volutpat, condimentum nunc in, commodo justo. Vestibulum non libero ante. Curabitur placerat metus in erat mollis, nec rhoncus velit suscipit. Donec finibus malesuada risus, sed consectetur quam aliquet ac. In et lorem non arcu finibus porta. Duis finibus tellus neque, sed lobortis est accumsan ac. Nullam vel eros tincidunt, dignissim nisi sit amet, dignissim dui. Vestibulum efficitur, neque a varius mattis, arcu erat vulputate est, eleifend consectetur tellus dolor id tellus. Curabitur rutrum congue sagittis. </p>
-            <button><a href="/contact.html">Get quote</a></button>
-          </div>
-        </section>
-      </section>
-     
-   <footer>
-    <div class="footer-divide">
-      <img src="/images/logowtext.png" alt="rescue logo"/>
-      <ul class="footer-links">
-        <li><a href="/index.html">Home</a></li>
+      <a class="logo" href="/">
+        <img
+          src="/images/rescuelogo.png"
+          alt="RescueRx logo"
+          class="logo-img"
+        />
+        <span class="logo-text">RescueRx</span>
+      </a>
+      <div class="nav-mobile">
+        <label class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+      </div>
+      <ul class="nav-list">
         <li><a href="/about.html">About</a></li>
-        <li><a href="/services.html">Services</a></li>
+        <li><a class="active">Services</a></li>
         <li><a href="/contact.html">Contact</a></li>
       </ul>
-      <div class="footer-contact">
+    </nav>
+    <section class="page-section" data-aos="fade-up">
+      <h1 class="page-heading">Services</h1>
+
+      <section class="services-info" data-aos="fade-up">
+        <h3
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          Ambulatory services
+        </h3>
+        <div
+          class="info-block"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          <img src="/images/about-ambulance.jpeg" alt="" />
+          <div class="info-desciption">
+            <p>
+              At RescueRx, we prioritize speed and care when it comes to
+              emergencies. Our ambulatory service ensures that a fully equipped
+              ambulance, with a team of trained paramedics, reaches you within
+              10 minutes of your call. Our fleet includes Advanced Life Support
+              (ALS) and Basic Life Support (BLS) vehicles, each designed to
+              handle a variety of medical emergencies, from critical injuries to
+              minor health concerns. Whether you’re at work, home, or an
+              industrial site, our goal is to deliver lifesaving care right when
+              you need it.
+            </p>
+          </div>
+        </div>
+        <h3
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          E-Pharmacy
+        </h3>
+        <div
+          class="info-block"
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          <div class="info-desciption">
+            <p>
+              Get your prescription and over-the-counter medications delivered
+              directly to your home with RescueRx E-Pharmacy. We offer a simple,
+              fast, and reliable way to order your medicines online. From daily
+              health supplements to critical prescriptions, our e-pharmacy
+              ensures that you have access to the medications you need, exactly
+              when you need them. Place your orders easily through our platform
+              and rest assured that your medications will arrive on time, every
+              time.
+            </p>
+          </div>
+          <img src="/images/pharmacy.jpeg" alt="" />
+        </div>
+        <h3
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          Lab tests
+        </h3>
+        <div
+          class="info-block"
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          <img src="/images/lab.jpeg" alt="" />
+          <div class="info-desciption">
+            <p>
+              At RescueRx, we make health check-ups and diagnostics easy and
+              accessible. Our lab testing services cover a wide range of tests,
+              from routine health screenings to specialized diagnostics. With
+              the convenience of home sample collection, you no longer need to
+              visit a lab to get tested. We ensure accurate results, delivered
+              quickly, and make it easy for you to monitor your health from the
+              comfort of your home. Trust RescueRx for precise, hassle-free
+              diagnostic services.
+            </p>
+          </div>
+        </div>
+        <h3
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          Consultation services
+        </h3>
+        <div
+          class="info-block"
+          data-aos="fade-left"
+          data-aos-offset="200"
+          data-aos-easing="ease-in-sine"
+        >
+          <div class="info-desciption">
+            <p>
+              Need medical advice but not sure if you should visit a hospital?
+              RescueRx Consultation Services connects you with experienced
+              healthcare professionals who can provide personalized health
+              consultations from the comfort of your home. Whether it’s a
+              routine check-up, post-treatment consultation, or immediate
+              medical advice, our team of doctors and specialists is available
+              for telehealth consultations, guiding you toward the best course
+              of action for your health.
+            </p>
+          </div>
+          <img src="/images/consultation.jpeg" alt="" />
+        </div>
+      </section>
+      <h2>Plans</h2>
+      <section
+        class="service-block-section plans"
+        data-aos="fade-up"
+        id="service-plans"
+      >
+        <div class="service-block">
+          <h3>Corporate</h3>
+          <p>
+            In the corporate world, employee health and safety are top
+            priorities. The RescueRx Corporate Plan ensures that businesses can
+            provide rapid medical assistance during workplace emergencies. We
+            offer dedicated ambulance services stationed nearby to ensure a
+            response within 10 minutes. From minor incidents to critical medical
+            situations, RescueRx guarantees that employees will receive
+            immediate care.
+          </p>
+          <button><a href="/contact.html">Get quote</a></button>
+        </div>
+        <div class="service-block">
+          <h3>Residential zones</h3>
+          <p>
+            RescueRx is committed to keeping residential communities safe by
+            offering the Residential Zones Plan, designed specifically for large
+            housing complexes and residential societies. With this plan, we
+            ensure that families and individuals receive swift emergency care
+            with ambulances arriving in less than 10 minutes.
+          </p>
+          <button><a href="/contact.html">Get quote</a></button>
+        </div>
+        <div class="service-block">
+          <h3>Industrial zones</h3>
+          <p>
+            The Industrial Zones Plan from RescueRx is designed to prioritize
+            worker safety in high-risk industries. Our plan ensures that
+            industrial sites have immediate access to life-saving ambulatory
+            services, with specially trained paramedics and advanced medical
+            equipment, arriving in less than 10 minutes. Our ambulances are
+            equipped to handle serious injuries, accidents, and critical
+            emergencies commonly encountered in industrial zones.
+          </p>
+          <button><a href="/contact.html">Get quote</a></button>
+        </div>
+      </section>
+    </section>
+
+    <footer>
+      <div class="footer-divide">
+        <img src="/images/logowtext.png" alt="rescue logo" />
+        <ul class="footer-links">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/services.html">Services</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+        <div class="footer-contact">
           <p class="address-1">
-            HEAD OFFICE - Shop No. 3, 2nd Floor, GNP Arcadia, Azde Gaon, Sudarshan Nagar,
-             Dombivali East - 421203.
+            HEAD OFFICE - Shop No. 3, 2nd Floor, GNP Arcadia, Azde Gaon,
+            Sudarshan Nagar, Dombivali East - 421203.
           </p>
-          <br/>
+          <br />
           <p class="address-2">
-            S - 89 Haware Fantasia Business Park, Sector 30 A, Vashi, Navi Mumbai - 400705.
+            S - 89 Haware Fantasia Business Park, Sector 30 A, Vashi, Navi
+            Mumbai - 400705.
           </p>
-          <br/>
+          <br />
           <a href="tel:+91 797-783-3144">+91 797-783-3144</a>
-          <br/>
+          <br />
           <a href="/contact.html">contact@rescuerx.in</a>
+        </div>
       </div>
-    </div>
-   
-    <p class="copy-text">
-      © 2024 RescueRx, All rights reserved
-    </p>
-  </footer>
-   <script type="module" src="/src/services.js"></script>
-   <script type="module" src="src/main.js"></script>
-   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-   <script>
-    AOS.init();
-  </script>
-</body>
+
+      <p class="copy-text">© 2024 RescueRx, All rights reserved</p>
+    </footer>
+    <script type="module" src="/src/services.js"></script>
+    <script type="module" src="src/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
 </html>
